@@ -1,11 +1,54 @@
 // tailwind.config.js
 module.exports = {
   future: {},
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        custom: "'Montserrat', sans-serif",
+      },
+      colors: {
+        "turbo-yellow": {
+          DEFAULT: "#E2DF00",
+          50: "#FFFE9B",
+          100: "#FFFD86",
+          200: "#FFFD5D",
+          300: "#FFFC35",
+          400: "#FFFC0C",
+          500: "#E2DF00",
+          600: "#AAA800",
+          700: "#727000",
+          800: "#3A3900",
+          900: "#020200",
+        },
+        "turbo-gray": {
+          DEFAULT: "#F5F5F5",
+          50: "#FFFFFF",
+          100: "#FFFFFF",
+          200: "#FFFFFF",
+          300: "#FFFFFF",
+          400: "#FFFFFF",
+          500: "#F5F5F5",
+          600: "#D9D9D9",
+          700: "#BDBDBD",
+          800: "#A1A1A1",
+          900: "#858585",
+        },
+        "turbo-pink": {
+          DEFAULT: "#A91D5C",
+          50: "#EC91BA",
+          100: "#E980AF",
+          200: "#E35D99",
+          300: "#DD3A84",
+          400: "#CC236F",
+          500: "#A91D5C",
+          600: "#791542",
+          700: "#490D28",
+          800: "#19040E",
+          900: "#000000",
+        },
+      },
+    },
   },
   variants: {},
   plugins: [],
