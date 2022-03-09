@@ -5,7 +5,7 @@ import Navbar from "./Navbar"
 
 function Header({ siteTitle }) {
   return (
-    <div className="">
+    <div className="sticky top-0 z-50">
       <Navbar />
     </div>
   )

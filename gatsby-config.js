@@ -5,7 +5,7 @@ module.exports = {
     author: `@kosvrouvas`,
   },
   flags: {
-    THE_FLAG: false
+    THE_FLAG: false,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -14,6 +14,14 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/, // See below to configure properly
+        },
       },
     },
     `gatsby-plugin-image`,
@@ -66,8 +74,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
-        postCssPlugins: [require("tailwindcss"), require("autoprefixer")]
-      }
+        postCssPlugins: [require("tailwindcss"), require("autoprefixer")],
+      },
     },
     {
       resolve: `gatsby-plugin-purgecss`,
@@ -76,6 +84,6 @@ module.exports = {
         develop: false,
         tailwind: true,
       },
-    }
+    },
   ],
 }

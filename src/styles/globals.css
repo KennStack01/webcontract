@@ -7,6 +7,9 @@
     font-family: "Montserrat", sans-serif;
   }
 } */
+.animate {
+  @apply transition-all duration-150 ease-linear;
+}
 
 @tailwind components;
 @tailwind utilities;

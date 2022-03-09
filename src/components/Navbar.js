@@ -20,20 +20,41 @@ const Navbar = () => {
     setOpen(!isOpen)
   }
 
+  const navLinks = [
+    {
+      name: "Home",
+      link: "/",
+    },
+    {
+      name: "Services",
+      link: "/services",
+    },
+    {
+      name: "Work",
+      link: "/work",
+    },
+    {
+      name: "Blog",
+      link: "/blog",
+    },
+  ]
+
   return (
     // <nav className="bg-white w-full p-3 rounded-md mx-3 flex flex-row justify-around">
-    <nav className="bg-white flex flex-col md:flex-row items-center rounded-md justify-around my-auto p-2 md:py-3 md:m-3">
+    <nav className="bg-white flex flex-col lg:flex-row lg:justify-center items-center rounded-md justify-around my-auto p-2 md:py-3 md:m-3">
       {/* Logo */}
       <div className="flex flex-row justify-between w-full">
         {/* <div style={{ maxWidth: `190px` }}> */}
         <div className="w-36 md:w-52 my-auto">
-          <StaticImage
-            src="../images/webcontract-logo.png"
-            alt="gatsby astronaut"
-          />
+          <Link to="/">
+            <StaticImage
+              src="../images/webcontract-logo.png"
+              alt="gatsby astronaut"
+            />
+          </Link>
         </div>
         <div
-          className="block md:hidden my-auto p-2 text-xl text-gray-800 rounded-sm hover:bg-turbo-gray-500 focus:bg-turbo-gray-500 cursor-pointer"
+          className="visible lg:invisible my-auto p-2 text-xl text-gray-800 rounded-sm hover:bg-turbo-gray-500 active:bg-turbo-gray-500 cursor-pointer"
           onClick={toggleNavbar}
         >
           {!isOpen ? <CgMenuCheese /> : <GrClose />}
@@ -42,50 +63,43 @@ const Navbar = () => {
       {/* Links */}
       <div
         className={`${
-          !isOpen ? "hidden" : "block"
-        } flex flex-col md:flex-row ml-0 md:justify-between my-8 md:my-0 mx-auto space-x-2 space-y-4 md:space-y-0 md:space-x-10 lg:space-x-20 font-semibold`}
+          !isOpen ? "hidden" : "z-20"
+        } flex flex-col lg:hidden ml-0 md:justify-between my-8 md:my-10 mx-auto space-x-2 space-y-4 font-semibold`}
       >
-        <div>
-          <Link to="/" activeStyle={activeLinkStyles} activeClassName="active">
-            Home
+        {navLinks.map(item => (
+          <div key={item.name} className="hover:underline">
+            <Link
+              to={item.link}
+              activeStyle={activeLinkStyles}
+              activeClassName="active"
+            >
+              {item.name}
+            </Link>
+          </div>
+        ))}
+        <div className="block lg:hidden mx-auto ">
+          <Link to="/">
+            <Button content={"Get Started"} />
           </Link>
-        </div>
-        <div>
-          <Link
-            to="/services"
-            activeStyle={activeLinkStyles}
-            activeClassName="active"
-          >
-            Services
-          </Link>
-        </div>
-
-        <div>
-          <Link
-            to="/work"
-            activeStyle={activeLinkStyles}
-            activeClassName="active"
-          >
-            Work
-          </Link>
-        </div>
-
-        <div>
-          {" "}
-          <Link
-            to="/blog"
-            activeStyle={activeLinkStyles}
-            activeClassName="active"
-          >
-            Blog
-          </Link>
-        </div>
-        <div className="block md:hidden mx-auto">
-          <Button content={"Get Started"} />
         </div>
       </div>
-      <div className="hidden md:block">
-        <Button content={"Get Started"} />
+      <div className="hidden lg:flex flex-row justify-around space-y-0 space-x-6 lg:space-x-10 font-semibold">
+        {navLinks.map(item => (
+          <div key={item.name} className="hover:underline my-auto">
+            <Link
+              to={item.link}
+              activeStyle={activeLinkStyles}
+              activeClassName="active"
+            >
+              {item.name}
+            </Link>
+          </div>
+        ))}
+      </div>
+      <div className="hidden lg:flex ml-6">
+        <Link to="/" className="">
+          <Button content={"Available"} />
+        </Link>
       </div>
     </nav>
   )

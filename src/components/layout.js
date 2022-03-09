@@ -6,11 +6,11 @@
  */
 
 import React from "react"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
 import Header from "./header"
-import Navbar from "./Navbar"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="font-custom bg-turbo-gray-500 layout flex flex-col min-h-screen">
+    <div className="font-custom bg-turbo-gray-500 min-h-screen">
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
@@ -36,7 +36,25 @@ const Layout = ({ children }) => {
         <main className="relative flex-1 lg:container p-0 mx-auto overflow-x-auto overflow-auto">
           {children}
         </main>
-        {/* Footer */}
+        <footer className="w-full bg-white p-4 flex flex-row justify-between bottom-0">
+          <div className="hidden md:block md:w-1/5">
+            <Link to="/">
+              <StaticImage
+                src="../images/webcontract-logo.png"
+                alt="gatsby astronaut"
+              />
+            </Link>
+          </div>
+          <div className="text-left text-sm font-medium my-auto">
+            <h4 className="">
+              Business run by Kenn Kibadi,{" "}
+              <span className="italic text-gray-600">
+                Software Developer and Indie Hacker
+              </span>
+            </h4>
+            <p className="my-2">Working as a Contractor w/Clients.</p>
+          </div>
+        </footer>
       </div>
     </div>
   )
