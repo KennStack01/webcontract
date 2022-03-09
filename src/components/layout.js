@@ -33,11 +33,11 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main className="relative flex-1 lg:container p-0 mx-auto overflow-x-auto overflow-auto">
+        <main className="relative flex-1 lg:container p-0 mx-auto overflow-x-hidden overflow-auto">
           {children}
         </main>
-        <footer className="w-full bg-white p-4 flex flex-row justify-between bottom-0">
-          <div className="hidden md:block md:w-1/5">
+        <footer className="w-full bg-white p-4 mt-14 flex flex-row justify-between bottom-0">
+          <div className="hidden md:block md:w-1/5 my-auto">
             <Link to="/">
               <StaticImage
                 src="../images/webcontract-logo.png"
