@@ -1,10 +1,12 @@
 import React from "react"
+import { Link } from "gatsby"
 import Marketing from "../../../assets/marketing.svg"
 import Landing from "../../../assets/landing.svg"
 import Blog from "../../../assets/blog.svg"
 import Shop from "../../../assets/shop.svg"
 import Design from "../../../assets/design.svg"
 import Service from "./Service"
+import Button from "../Buttons/Button"
 
 const myServicesList = [
   {
@@ -50,7 +52,7 @@ const myServicesList = [
 
 const ServicesList = () => {
   return (
-    <div>
+    <div id="services" className="flex flex-col">
       <h1 className="font-bold text-center text-xl md:text-4xl my-12 md:my-20 md:mx-8">
         How can WebContract help your Business?
       </h1>
@@ -64,6 +66,11 @@ const ServicesList = () => {
             bgColor={service.bgColor}
           />
         ))}
+      </div>
+      <div className="mx-auto my-5">
+        <Link to="/#contact">
+          <Button content={"Contact me"} />
+        </Link>
       </div>
     </div>
   )

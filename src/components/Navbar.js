@@ -23,15 +23,15 @@ const Navbar = () => {
   const navLinks = [
     {
       name: "Home",
-      link: "/",
+      link: "/#home",
     },
     {
       name: "Services",
-      link: "/services",
+      link: "/#services",
     },
     {
       name: "Work",
-      link: "/work",
+      link: "/#work",
     },
     {
       name: "Blog",
@@ -78,7 +78,7 @@ const Navbar = () => {
           </div>
         ))}
         <div className="block lg:hidden mx-auto ">
-          <Link to="/">
+          <Link to="/#contact">
             <Button content={"Get Started"} />
           </Link>
         </div>
@@ -97,7 +97,7 @@ const Navbar = () => {
         ))}
       </div>
       <div className="hidden lg:flex ml-6">
-        <Link to="/" className="">
+        <Link to="/#contact" className="">
           <Button content={"Available"} />
         </Link>
       </div>

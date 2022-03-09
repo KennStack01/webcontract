@@ -14,8 +14,8 @@ const items = [
     value="1"
   />,
   <HeroSection
-    title={`From Logo and Graphic Charter to a Production-ready Website!`}
-    description={`Web Development + Graphic Design`}
+    title={`From Logo, Graphic Charter and UI/UX Design!`}
+    description={`Web Development + Graphic | Product Design`}
     SVG={HeroPicture2}
     value="2"
   />,

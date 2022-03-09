@@ -8,6 +8,7 @@ import Hero from "../components/Hero/Hero"
 import Achieve from "../../assets/achieve.svg"
 import Office from "../../assets/work-office.svg"
 import ServicesList from "../components/Services/ServicesList"
+import Contact from "../components/Contact"
 
 const IndexPage = () => (
   <Layout>
@@ -47,6 +48,9 @@ const IndexPage = () => (
     {/* Services */}
 
     <ServicesList />
+
+    <div id="contact" className="py-5"></div>
+    <Contact />
   </Layout>
 )
 
