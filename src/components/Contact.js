@@ -52,7 +52,7 @@ const Contact = () => {
                     name="Email address"
                     id="Email address"
                     autoComplete="email"
-                    placeholder="Please enter a valid email address"
+                    placeholder="Please enter your email address"
                     required
                     className="mt-1 p-2 focus:ring-turbo-yellow-500 focus:border-turbo-yellow-500 block w-full shadow-sm sm:text-sm border-turbo-yellow-300 rounded-sm"
                   />

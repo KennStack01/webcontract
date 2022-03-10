@@ -9,6 +9,7 @@ import Achieve from "../../assets/achieve.svg"
 import Office from "../../assets/work-office.svg"
 import ServicesList from "../components/Services/ServicesList"
 import Contact from "../components/Contact"
+import FeaturesList from "../components/Features/FeaturesList"
 
 const IndexPage = () => (
   <Layout>
@@ -45,9 +46,9 @@ const IndexPage = () => (
       </div>
     </div>
 
-    {/* Services */}
-
     <ServicesList />
+
+    <FeaturesList />
 
     <div id="contact" className="py-5"></div>
     <Contact />
