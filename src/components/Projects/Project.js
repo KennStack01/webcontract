@@ -14,11 +14,11 @@ const Feature = ({ name, description, link }) => {
           {" "}
           {name}{" "}
         </h1>
-        <p className="text-gray-700 text-sm md:text-md text-center my-5 font-normal ">
+        <p className="text-gray-700 text-sm md:text-md text-center my-2 md:my-2 font-normal ">
           {" "}
           {description}{" "}
         </p>
-        <a href={link} target="__blank" className="mx-auto my-10">
+        <a href={link} target="__blank" className="mx-auto my-10 md:my-2">
           <Button content={"Visit Website"} />
         </a>
       </div>
