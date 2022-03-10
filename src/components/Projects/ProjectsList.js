@@ -28,7 +28,7 @@ const ProjectsList = () => {
   const myprojectsList = data.allDatoCmsProject.edges.map(({ node }) => node)
 
   return (
-    <div id="work" className="w-full p-5 my-10 md:my-24 flex flex-col">
+    <div id="work" className="w-full my-10 md:my-24 flex flex-col">
       <h1 className="font-bold text-center rounded-md text-xl md:text-4xl px-2 md:mx-8">
         Why Working with WebContract?
       </h1>
