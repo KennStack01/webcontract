@@ -19,7 +19,7 @@ const Contact = () => {
               <input
                 type="hidden"
                 name="_next"
-                value="https://www.webcontract.netlify.app"
+                value="https://www.webcontract.netlify.app/"
               />
               <div className="flex flex-col md:flex-row justify-between">
                 <div className="my-2 md:my-auto mx-2 md:w-1/2">
