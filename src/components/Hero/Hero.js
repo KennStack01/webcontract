@@ -22,7 +22,7 @@ const items = [
 
 const Hero = () => {
   return (
-    <div>
+    <div className="relative">
       {items.map((item, index) => {
         return <div key={index}>{item}</div>
       })}
