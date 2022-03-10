@@ -47,7 +47,15 @@ const Layout = ({ children }) => {
           </div>
           <div className="text-left text-sm font-medium my-auto">
             <h4 className="">
-              Business run by Kenn Kibadi,{" "}
+              Business run by{" "}
+              <a
+                href="https://twitter.com/KennKibadi"
+                target="__blank"
+                className=" cursor-pointer hover:underline font-bold text-turbo-pink-600"
+              >
+                Kenn Kibadi
+              </a>
+              ,{" "}
               <span className="italic text-gray-600">
                 Software Developer and Indie Hacker
               </span>
