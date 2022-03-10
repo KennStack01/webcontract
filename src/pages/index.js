@@ -10,6 +10,7 @@ import Office from "../../assets/work-office.svg"
 import ServicesList from "../components/Services/ServicesList"
 import Contact from "../components/Contact"
 import FeaturesList from "../components/Features/FeaturesList"
+import ToolsWeUse from "../components/ToolsWeUse"
 
 const IndexPage = () => (
   <Layout>
@@ -33,6 +34,7 @@ const IndexPage = () => (
       Headless CMS ➞ Your Business Website ➞ Your Customers ➞ Sales ➞ Growth
     </h1>
     {/* Headless CMS Logo here*/}
+    <ToolsWeUse />
     <div className="bg-white h-96 rounded-sm my-10 py-0 md:px-6 flex flex-col md:flex-row justify-between">
       <Office className="md:w-2/5 my-auto" />
       <div className="flex flex-col justify-center my-auto p-6 md:w-3/5">
