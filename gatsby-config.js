@@ -36,8 +36,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `WebContract`,
+        short_name: `WebContract`,
         start_url: `/`,
         background_color: `#68E1FD`,
         theme_color: `#68E1FD`,
