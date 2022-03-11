@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import NotFoundSVG from "../../assets/notfound.svg"
 
-const NotFound = () => (
+const NotFoundPage = () => (
   <Layout>
     <SEO
       title="NotFound"
@@ -13,7 +13,7 @@ const NotFound = () => (
     />
 
     <div
-      id="home"
+      // id="home"
       className="flex flex-col lg:flex-row justify-between mx-auto my-5 py-6 lg:py-6 md:-mt-16 lg:-mt-0"
     >
       <NotFoundSVG className="w-2/3 mx-auto md:w-2/3 lg:w-2/4 my-auto" />
@@ -34,4 +34,4 @@ const NotFound = () => (
   </Layout>
 )
 
-export default NotFound
+export default NotFoundPage
