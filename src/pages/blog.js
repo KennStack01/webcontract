@@ -8,7 +8,7 @@ import BlogSVG from "../../assets/problem-solving.svg"
 const Blog = () => (
   <Layout>
     <SEO
-      title="Blog | WebContract"
+      title="Blog"
       description="Freelance Website Web Developer Headless CMS JAMStack technologies"
     />
 

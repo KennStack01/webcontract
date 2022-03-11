@@ -8,7 +8,7 @@ import HappySVG from "../../assets/happy.svg"
 const ThankYou = () => (
   <Layout>
     <SEO
-      title="Thank you | WebContract"
+      title="Thank you"
       description="Freelance Website Web Developer Headless CMS JAMStack technologies"
     />
 

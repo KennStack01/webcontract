@@ -16,7 +16,7 @@ import ProjectsList from "../components/Projects/ProjectsList"
 const IndexPage = () => (
   <Layout>
     <SEO
-      title="Home | WebContract"
+      title="Home"
       description="Freelance Website Web Developer Headless CMS JAMStack technologies"
     />
     <Hero />

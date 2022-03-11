@@ -8,7 +8,7 @@ import NotFoundSVG from "../../assets/notfound.svg"
 const NotFound = () => (
   <Layout>
     <SEO
-      title="NotFound | WebContract"
+      title="NotFound"
       description="Freelance Website Web Developer Headless CMS JAMStack technologies"
     />
 
