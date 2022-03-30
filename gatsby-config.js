@@ -5,10 +5,11 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `WebContract Business`,
+    titleTemplate: "%s · WebContract Business",
     description: `Online Shop, Marketing Business, Landing Page, Blog Websites for Your Business, Company, Startup. Freelance Web Development`,
-    author: `@KennKibadi`,
-    siteUrl: `https://www.webcontract.io/`,
-    image: `./src/images/webcontract-seo.jpg`,
+    url: `https://www.webcontract.io`,
+    image: `/webcontract-seo.jpg`,
+    twitterUsername: "@KennKibadi",
   },
   flags: {
     THE_FLAG: false,
