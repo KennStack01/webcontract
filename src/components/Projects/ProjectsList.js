@@ -30,7 +30,7 @@ const ProjectsList = () => {
   return (
     <div id="work" className="w-full my-10 md:my-24 flex flex-col">
       <h1 className="font-bold text-center rounded-md text-xl md:text-4xl px-2 md:mx-8">
-        Why Working with WebContract?
+        Some of the projects
       </h1>
       <div className="flex flex-col">
         {myprojectsList.map((project, index) => (
