@@ -34,6 +34,10 @@ const Navbar = () => {
       link: "/#work",
     },
     {
+      name: "FAQs",
+      link: "/#faqs",
+    },
+    {
       name: "Blog",
       link: "/blog",
     },

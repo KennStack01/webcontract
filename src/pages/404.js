@@ -7,7 +7,7 @@ import NotFoundSVG from "../../assets/notfound.svg"
 
 const browser = typeof window !== "undefined" && window
 
-const NotFoundPage = () => {
+const NotFound = () => {
   return (
     browser && (
       <Layout>
@@ -40,4 +40,4 @@ const NotFoundPage = () => {
   )
 }
 
-export default NotFoundPage
+export default NotFound

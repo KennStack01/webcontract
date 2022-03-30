@@ -4,6 +4,9 @@ import Button from "./Buttons/Button"
 const Contact = () => {
   return (
     <div className="">
+      <h1 className="font-bold text-center rounded-md text-xl md:text-3xl px-2 my-5 md:mx-8">
+        Text me below to get started 👇
+      </h1>
       <form
         action="https://formsubmit.co/747dc9e76769e944cd50d47db53ec514"
         method="POST"
@@ -66,7 +69,7 @@ const Contact = () => {
                 >
                   How can I help you?
                 </label>
-                <div className="mt-1">
+                <div className="mt-1 mx-auto">
                   <textarea
                     id="Message"
                     name="Message"

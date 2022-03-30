@@ -12,6 +12,7 @@ import Contact from "../components/Contact"
 import FeaturesList from "../components/Features/FeaturesList"
 import ToolsWeUse from "../components/ToolsWeUse"
 import ProjectsList from "../components/Projects/ProjectsList"
+import Questions from "../components/FAQs/Questions"
 
 const IndexPage = () => (
   <Layout>
@@ -54,6 +55,9 @@ const IndexPage = () => (
     <FeaturesList />
 
     <ProjectsList />
+
+    <Questions />
+
     <div id="contact" className="py-5"></div>
     <Contact />
   </Layout>
