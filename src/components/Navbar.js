@@ -41,6 +41,10 @@ const Navbar = () => {
       name: "Blog",
       link: "/blog",
     },
+    // {
+    //   name: "Pricing",
+    //   link: "/#pricing",
+    // },
   ]
 
   return (

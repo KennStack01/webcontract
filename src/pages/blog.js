@@ -66,7 +66,7 @@ const Blog = () => (
 
             <div className="my-3 mx-auto ">
               <button type="submit" className="inline-flex justify-center">
-                <Button content={`Join the Mission`} />
+                <Button content={`Remind me`} />
               </button>
             </div>
           </div>

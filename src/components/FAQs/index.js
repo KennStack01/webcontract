@@ -57,7 +57,7 @@ const styles = {
   bgColor: "#F5F5F5",
   titleTextColor: "black",
   rowTitleColor: "black",
-  rowTitleTextSize: "17px",
+  rowTitleTextSize: "16px",
   rowContentTextSize: "15px",
   rowContentColor: "#858585",
   rowContentPaddingBottom: "20px",
