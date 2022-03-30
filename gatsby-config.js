@@ -7,6 +7,7 @@ module.exports = {
     title: `WebContract Business`,
     titleTemplate: "%s · WebContract Business",
     description: `Online Shop, Marketing Business, Landing Page, Blog Websites for Your Business, Company, Startup. Freelance Web Development`,
+    // author: "WebContract",
     url: `https://www.webcontract.io`,
     image: `/webcontract-seo.jpg`,
     twitterUsername: "@KennKibadi",
