@@ -60,7 +60,7 @@ const Layout = ({ children }) => {
                 Software Developer and Indie Hacker
               </span>
             </h4>
-            <p className="my-2">Working as a Contractor w/Clients.</p>
+            <p className="my-2">Working with his Clients.</p>
           </div>
         </footer>
       </div>
