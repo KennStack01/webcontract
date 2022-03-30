@@ -22,6 +22,7 @@ module.exports = {
         anonymize: true,
       },
     },
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
